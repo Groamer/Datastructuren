@@ -4,6 +4,7 @@
 #include "FileIO.h"
 #include "Pointers.h"
 #include "Arrays.h"
+#include "DummyModel.h"
 
 int main()
 {
@@ -28,8 +29,16 @@ int main()
 	Arrays arrays;
 	arrays.setDynamicArray();
 
+	DummyModel modelA(10, 20);
+	modelA.print();
+
+	DummyModel modelB = modelA;
+	modelB.print();
+
+	DummyModel modelC(modelA);
+	modelC.print();
+
 	system("pause");
-	
 	return 0;
 }
 

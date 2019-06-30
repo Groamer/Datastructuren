@@ -23,7 +23,7 @@
     <ProjectGuid>{C8C512CA-71D4-40EF-BD5B-03C37704C30F}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Datastructuren</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -149,6 +149,7 @@
   <ItemGroup>
     <ClInclude Include="Arrays.h" />
     <ClInclude Include="ConsoleIO.h" />
+    <ClInclude Include="DummyModel.h" />
     <ClInclude Include="FileIO.h" />
     <ClInclude Include="Pointers.h" />
     <ClInclude Include="SimpleMethods.h" />
@@ -160,6 +161,7 @@
     <ClCompile Include="Arrays.cpp" />
     <ClCompile Include="ConsoleIO.cpp" />
     <ClCompile Include="Datastructuren.cpp" />
+    <ClCompile Include="DummyModel.cpp" />
     <ClCompile Include="FileIO.cpp" />
     <ClCompile Include="Pointers.cpp" />
     <ClCompile Include="SimpleMethods.cpp" />
