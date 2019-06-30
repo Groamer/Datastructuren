@@ -149,8 +149,10 @@
   <ItemGroup>
     <ClInclude Include="Arrays.h" />
     <ClInclude Include="ConsoleIO.h" />
+    <ClInclude Include="CString.h" />
     <ClInclude Include="DummyModel.h" />
     <ClInclude Include="FileIO.h" />
+    <ClInclude Include="Overloader.h" />
     <ClInclude Include="Pointers.h" />
     <ClInclude Include="SimpleMethods.h" />
     <ClInclude Include="SmartPointers.h" />
@@ -160,9 +162,11 @@
   <ItemGroup>
     <ClCompile Include="Arrays.cpp" />
     <ClCompile Include="ConsoleIO.cpp" />
+    <ClCompile Include="CString.cpp" />
     <ClCompile Include="Datastructuren.cpp" />
     <ClCompile Include="DummyModel.cpp" />
     <ClCompile Include="FileIO.cpp" />
+    <ClCompile Include="Overloader.cpp" />
     <ClCompile Include="Pointers.cpp" />
     <ClCompile Include="SimpleMethods.cpp" />
     <ClCompile Include="SmartPointers.cpp" />

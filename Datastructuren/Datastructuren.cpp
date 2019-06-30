@@ -5,10 +5,12 @@
 #include "Pointers.h"
 #include "Arrays.h"
 #include "DummyModel.h"
+#include "CString.h"
+#include "Overloader.h"
 
 int main()
 {
-	/*SimpleMethods simpleMethods;
+	SimpleMethods simpleMethods;
 	std::cout << "6 + 3 = " << simpleMethods.add(6, 3) << std::endl;;
 	std::cout << "6 - 3 = " << simpleMethods.substract(6, 3) << std::endl;;
 	std::cout << "6 * 3 = " << simpleMethods.multiply(6, 3) << std::endl;;
@@ -20,7 +22,7 @@ int main()
 
 	FileIO fileIO;
 	fileIO.writeTextToFile("Godverdomme dik bestand met dikke tekst.");
-	fileIO.readTextFromFile();*/
+	fileIO.readTextFromFile();
 
 	Pointers pointers;
 	pointers.getAddress();
@@ -37,6 +39,13 @@ int main()
 
 	DummyModel modelC(modelA);
 	modelC.print();
+
+	CString cString;
+	std::string text = "super duper text for test purposes!";
+	cString.printCString(cString.stringtoCString(text), text.length());
+
+	Overloader overloader(4, 8, 2012);
+	std::cout << overloader << std::endl;
 
 	system("pause");
 	return 0;

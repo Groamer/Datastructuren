@@ -19,8 +19,6 @@ void Arrays::setDynamicArray() {
 	for (int i : ints) {
 		std::cout << i << std::endl;
 	}
-
-
 }
 
 void Arrays::setStaticArray() {

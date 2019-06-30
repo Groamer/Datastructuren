@@ -42,6 +42,12 @@
     <ClInclude Include="DummyModel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Overloader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -69,6 +75,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="DummyModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CString.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Overloader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
