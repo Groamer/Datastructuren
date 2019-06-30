@@ -31,21 +31,23 @@ int main()
 	Arrays arrays;
 	arrays.setDynamicArray();
 
-	DummyModel modelA(10, 20);
-	modelA.print();
-
-	DummyModel modelB = modelA;
-	modelB.print();
-
-	DummyModel modelC(modelA);
-	modelC.print();
+	DummyModel modelA;
+	modelA.setCoordinates2D(5, 10);
+	DummyModel modelB(modelA);
+	modelA.setCoordinates2D(0, 0);
+	std::cout << "Model A: " << modelA << std::endl;
+	std::cout << "Model B: " << modelB << std::endl;
 
 	CString cString;
 	std::string text = "super duper text for test purposes!";
 	cString.printCString(cString.stringtoCString(text), text.length());
 
-	Overloader overloader(4, 8, 2012);
-	std::cout << overloader << std::endl;
+	Overloader overloaderA(4, 8, 2012);
+	Overloader overloaderB(1, 1, 2010);
+	std::cout << "Date A: " << overloaderA << std::endl;
+	std::cout << "Date B: " << overloaderB << std::endl;
+	overloaderA = overloaderB;
+	std::cout << "Date A: " << overloaderA << std::endl;
 
 	system("pause");
 	return 0;

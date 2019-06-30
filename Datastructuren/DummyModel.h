@@ -1,17 +1,20 @@
 #pragma once
 class DummyModel {
-private:
-	int x;
-	int y;
-
 public:
-	DummyModel(int, int);
+	//Normal constructor
+	DummyModel();
 	//Copy constructor
-	DummyModel(const DummyModel &model) {
-		x = model.x;
-		y = model.y;
-	};
+	DummyModel(const DummyModel&);
+	//Destructor
 	~DummyModel();
 
-	void print();
+	int* getCoordinates2D();
+	void setCoordinates2D(int, int);
+
+	//std::cout << operator overload
+	friend std::ostream& operator<<(std::ostream&, const DummyModel&);
+
+private:
+	static const int arraySize = 2;
+	int coordinates2D[arraySize];
 };

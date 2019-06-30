@@ -6,7 +6,7 @@ CString::CString() {
 }
 
 CString::~CString() {
-	//delete[] this->cString;
+	delete[] this->cString;
 }
 
 void CString::printCString(char* chars, int size) {
